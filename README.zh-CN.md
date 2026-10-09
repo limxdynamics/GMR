@@ -1,5 +1,11 @@
 [English](README.md) | **中文**
 
+## 演示
+
+<p align="center">
+  <img src="./assets/gmr_demo.gif" alt="GMR 动作重定向演示" width="520">
+</p>
+
 ## 快速上手（LimX 机器人 & BeyondMimic 动作导出）
 
 本节记录了本 LimX 版 [General Motion Retargeting (GMR)](https://github.com/YanjieZe/GMR) fork 中的**最新安装、使用与输出格式**：两款 LimX 机器人（`limx_oli_edu`、`limx_luna`）以及对齐 [BeyondMimic](https://github.com/HybridRobotics/whole_body_tracking) / Isaac Lab 参考动作约定的动作导出。
