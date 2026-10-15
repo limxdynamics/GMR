@@ -21,6 +21,7 @@ setup(
     "qpsolvers[proxqp]",
     "rich",
     "tqdm",
+    "torch",
     "opencv-python",
     "natsort",
     "psutil",
