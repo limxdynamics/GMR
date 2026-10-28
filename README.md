@@ -41,7 +41,8 @@ conventions.
 
 ### Installation
 
-Tested on **Ubuntu 22.04 / 20.04**.
+Tested on **Ubuntu 22.04 / 20.04**. GMR is not published on PyPI -- this is a source install, as
+below.
 
 ```bash
 conda create -n gmr python=3.10 -y

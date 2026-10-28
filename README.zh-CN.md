@@ -37,7 +37,7 @@
 
 ### 安装
 
-已在 **Ubuntu 22.04 / 20.04** 上测试通过。
+已在 **Ubuntu 22.04 / 20.04** 上测试通过。GMR 没有发布到 PyPI，请按下文从源码安装。
 
 ```bash
 conda create -n gmr python=3.10 -y
