@@ -2,7 +2,7 @@
   <a href="upstream.md">English</a> | <b>中文</b>
 </p>
 
-_上游 GMR README 的中文译本（本仓库自己维护，上游只有英文版）。只有相对路径（`../assets/...`、`../DOC.md` 等）与一处标题层级不同，以便放在 `docs/` 下。LimX 新增的部分写在 [`../README.zh-CN.md`](../README.zh-CN.md)。_
+_上游 GMR README 的中文译本（本仓库自己维护，上游只有英文版）。与上游原文相比只有三处不同：相对路径加了 `../` 以便放在 `docs/` 下；`# 新闻与更新` 降为 `##`，使文件只有一个 H1；以及「支持的机器人与数据格式」那张表被重建 —— 上游那张是 9 个表头格对 8 个数据格，有两行少一格、表内还有一行游离文本，且 PAL Talos 标了支持 SMPL-X 但并没有对应配置。LimX 新增的部分写在 [`../README.zh-CN.md`](../README.zh-CN.md)。_
 
 # GMR: General Motion Retargeting（通用运动重定向）
 
@@ -152,30 +152,29 @@ _上游 GMR README 的中文译本（本仓库自己维护，上游只有英文�
 
 ## 支持的机器人与数据格式
 
-
-
-| 分配 ID | 机器人/数据格式 | 机器人 DoF | SMPLX ([AMASS](https://amass.is.tue.mpg.de/), [OMOMO](https://github.com/lijiaman/omomo_release)) | BVH [LAFAN1](https://github.com/ubisoft/ubisoft-laforge-animation-dataset)| FBX ([OptiTrack](https://www.optitrack.com/)) | BVH [Nokov](https://www.nokov.com/) | PICO ([XRoboToolkit](https://github.com/XR-Robotics/XRoboToolkit-PC-Service)) | 更多格式即将到来 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 分配 ID | 机器人/数据格式 | 机器人 DoF | SMPLX ([AMASS](https://amass.is.tue.mpg.de/), [OMOMO](https://github.com/lijiaman/omomo_release)) | BVH [LAFAN1](https://github.com/ubisoft/ubisoft-laforge-animation-dataset) | FBX ([OptiTrack](https://www.optitrack.com/)) | BVH [Nokov](https://www.nokov.com/) | PICO ([XRoboToolkit](https://github.com/XR-Robotics/XRoboToolkit-PC-Service)) |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | Unitree G1 `unitree_g1` | Leg (2\*6) + Waist (3) + Arm (2\*7) = 29 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 1 | Unitree G1 with Hands `unitree_g1_with_hands` | Leg (2\*6) + Waist (3) + Arm (2\*7) + Hand (2\*7) = 43 | ✅ | ✅ | ✅ | TBD | TBD |
 | 2 | Unitree H1 `unitree_h1` | Leg (2\*5) + Waist (1) + Arm (2\*4) = 19 | ✅ | TBD | TBD | TBD | TBD |
 | 3 | Unitree H1 2 `unitree_h1_2` | Leg (2\*6) + Waist (1) + Arm (2\*7) = 27 | ✅ | TBD | TBD | TBD | TBD |
-| 4 | Booster T1 `booster_t1` | TBD | ✅ | TBD | TBD | TBD |
-| 5 | Booster T1 29dof `booster_t1_29dof` | TBD | ✅ | ✅ | TBD | TBD |
-| 6 | Booster K1 `booster_k1` | Neck (2) + Arm (2\*4) + Leg (2\*6) = 22 | ✅ | TBD | TBD | TBD |
-| 7 | Stanford ToddlerBot `stanford_toddy` | TBD | ✅ | ✅ | TBD | TBD |
-| 8 | Fourier N1 `fourier_n1` | TBD | ✅ | ✅ | TBD | TBD |
-| 9 | ENGINEAI PM01 `engineai_pm01` | TBD | ✅ | ✅ | TBD | TBD |
-| 10 | HighTorque Hi `hightorque_hi` | Head (2) + Arm (2\*5) + Waist (1) + Leg (2\*6) = 25 | ✅ | TBD | TBD | TBD |
-| 11 | Galaxea R1 Pro `galaxea_r1pro`（这是一款轮式机器人！） | Base (6) + Torso (4) + Arm (2\*7) = 24 | ✅ | TBD | TBD | TBD |
-| 12 | Kuavo `kuavo_s45` | Head (2) + Arm (2\*7) + Leg (2\*6) = 28 | ✅ | TBD | TBD | TBD |
-| 13 | Berkeley Humanoid Lite `berkeley_humanoid_lite`（需进一步调优） | Leg (2\*6) + Arm (2\*5) = 22 | ✅ | TBD | TBD | TBD |
-| 14 | PND Adam Lite `pnd_adam_lite` | Leg (2\*6) + Waist (3) + Arm (2\*5) = 25 | ✅ | TBD | TBD | TBD |
-| 15 | Tienkung `tienkung` | Leg (2\*6) + Arm (2\*4) = 20 | ✅ | TBD | TBD | TBD |
-| 16 | PAL Robotics' Talos `pal_talos` | Head (2) + Arm (2\*7) + Waist (2) + Leg (2\*6) = 30 | ✅ | TBD | TBD | TBD |
-| 更多机器人即将到来！ |
-| 18 | AgiBot A2 `agibot_a2` | TBD | TBD | TBD | TBD | TBD |
-| 19 | OpenLoong `openloong` | TBD | TBD | TBD | TBD | TBD |
+| 4 | Booster T1 `booster_t1` | TBD | ✅ | TBD | TBD | TBD | TBD |
+| 5 | Booster T1 29dof `booster_t1_29dof` | TBD | ✅ | ✅ | TBD | TBD | TBD |
+| 6 | Booster K1 `booster_k1` | Neck (2) + Arm (2\*4) + Leg (2\*6) = 22 | ✅ | TBD | TBD | TBD | TBD |
+| 7 | Stanford ToddlerBot `stanford_toddy` | TBD | ✅ | ✅ | TBD | TBD | TBD |
+| 8 | Fourier N1 `fourier_n1` | TBD | ✅ | ✅ | TBD | TBD | TBD |
+| 9 | ENGINEAI PM01 `engineai_pm01` | TBD | ✅ | ✅ | TBD | TBD | TBD |
+| 10 | HighTorque Hi `hightorque_hi` | Head (2) + Arm (2\*5) + Waist (1) + Leg (2\*6) = 25 | ✅ | TBD | TBD | TBD | TBD |
+| 11 | Galaxea R1 Pro `galaxea_r1pro`（这是一款轮式机器人！） | Base (6) + Torso (4) + Arm (2\*7) = 24 | ✅ | TBD | TBD | TBD | TBD |
+| 12 | Kuavo `kuavo_s45` | Head (2) + Arm (2\*7) + Leg (2\*6) = 28 | ✅ | TBD | TBD | TBD | TBD |
+| 13 | Berkeley Humanoid Lite `berkeley_humanoid_lite`（需进一步调优） | Leg (2\*6) + Arm (2\*5) = 22 | ✅ | TBD | TBD | TBD | TBD |
+| 14 | PND Adam Lite `pnd_adam_lite` | Leg (2\*6) + Waist (3) + Arm (2\*5) = 25 | ✅ | TBD | TBD | TBD | TBD |
+| 15 | Tienkung `tienkung` | Leg (2\*6) + Arm (2\*4) = 20 | ✅ | TBD | TBD | TBD | TBD |
+| 16 | PAL Robotics' Talos `pal_talos` | Head (2) + Arm (2\*7) + Waist (2) + Leg (2\*6) = 30 | TBD | ✅ | TBD | TBD | TBD |
+| 17 | AgiBot A2 `agibot_a2` | TBD | TBD | TBD | TBD | TBD | TBD |
+| 18 | OpenLoong `openloong` | TBD | TBD | TBD | TBD | TBD | TBD |
+
+更多机器人即将到来！
 
 
 

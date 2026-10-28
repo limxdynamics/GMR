@@ -2,7 +2,7 @@
   <b>English</b> | <a href="upstream.zh-CN.md">中文</a>
 </p>
 
-_Upstream GMR README, kept as it was. Only the relative paths (`../assets/...`, `../DOC.md`, ...) and one heading level differ, so that the file can live under `docs/`. The LimX additions are documented in [`../README.md`](../README.md)._
+_Upstream GMR README, kept as it was, with three exceptions: relative paths gained `../` so the file can live under `docs/`; `# News & Updates` was demoted to `##` so the file has a single H1; and the support table under *Supported Robots and Data Formats* was rebuilt -- upstream had nine header cells against eight data cells, two rows one cell short, a stray row inside the table, and PAL Talos marked as supporting SMPL-X when no such config exists. The LimX additions are documented in [`../README.md`](../README.md)._
 
 # GMR: General Motion Retargeting
 
@@ -153,30 +153,29 @@ This repo is licensed under the [MIT License](../LICENSE).
 
 ## Supported Robots and Data Formats
 
-
-
-| Assigned ID | Robot/Data Format | Robot DoF | SMPLX ([AMASS](https://amass.is.tue.mpg.de/), [OMOMO](https://github.com/lijiaman/omomo_release)) | BVH [LAFAN1](https://github.com/ubisoft/ubisoft-laforge-animation-dataset)| FBX ([OptiTrack](https://www.optitrack.com/)) |  BVH [Nokov](https://www.nokov.com/) | PICO ([XRoboToolkit](https://github.com/XR-Robotics/XRoboToolkit-PC-Service)) | More formats coming soon | 
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | Unitree G1 `unitree_g1` | Leg (2\*6) + Waist (3) + Arm (2\*7) = 29 | ✅ | ✅ | ✅ |  ✅ | ✅ |
+| Assigned ID | Robot/Data Format | Robot DoF | SMPLX ([AMASS](https://amass.is.tue.mpg.de/), [OMOMO](https://github.com/lijiaman/omomo_release)) | BVH [LAFAN1](https://github.com/ubisoft/ubisoft-laforge-animation-dataset) | FBX ([OptiTrack](https://www.optitrack.com/)) | BVH [Nokov](https://www.nokov.com/) | PICO ([XRoboToolkit](https://github.com/XR-Robotics/XRoboToolkit-PC-Service)) |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | Unitree G1 `unitree_g1` | Leg (2\*6) + Waist (3) + Arm (2\*7) = 29 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 1 | Unitree G1 with Hands `unitree_g1_with_hands` | Leg (2\*6) + Waist (3) + Arm (2\*7) + Hand (2\*7) = 43 | ✅ | ✅ | ✅ | TBD | TBD |
 | 2 | Unitree H1 `unitree_h1` | Leg (2\*5) + Waist (1) + Arm (2\*4) = 19 | ✅ | TBD | TBD | TBD | TBD |
 | 3 | Unitree H1 2 `unitree_h1_2` | Leg (2\*6) + Waist (1) + Arm (2\*7) = 27 | ✅ | TBD | TBD | TBD | TBD |
-| 4 | Booster T1 `booster_t1` | TBD | ✅ |  TBD  | TBD | TBD |
-| 5 | Booster T1 29dof `booster_t1_29dof` | TBD | ✅ |  ✅  | TBD | TBD |
-| 6 | Booster K1 `booster_k1` | Neck (2) + Arm (2\*4) + Leg (2\*6) = 22 | ✅ | TBD | TBD | TBD |
-| 7 | Stanford ToddlerBot `stanford_toddy` | TBD | ✅ | ✅ | TBD | TBD |
-| 8 | Fourier N1 `fourier_n1` | TBD | ✅ | ✅ | TBD | TBD |
-| 9 | ENGINEAI PM01 `engineai_pm01` | TBD | ✅ | ✅ | TBD | TBD |
-| 10 | HighTorque Hi `hightorque_hi` | Head (2) + Arm (2\*5) + Waist (1) + Leg (2\*6) = 25 | ✅ | TBD | TBD | TBD |
-| 11 | Galaxea R1 Pro `galaxea_r1pro` (this is a wheeled robot!) |  Base (6) + Torso (4) + Arm (2*7) = 24 | ✅ | TBD | TBD | TBD |
-| 12 | Kuavo `kuavo_s45` |  Head (2) + Arm (2\*7) + Leg (2\*6) = 28 | ✅ | TBD | TBD | TBD |
-| 13 | Berkeley Humanoid Lite `berkeley_humanoid_lite` (need further tuning) | Leg (2\*6) + Arm (2\*5) = 22 | ✅ | TBD | TBD | TBD |
-| 14 | PND Adam Lite `pnd_adam_lite`  | Leg (2\*6) + Waist (3) + Arm (2\*5) = 25 | ✅ | TBD | TBD | TBD |
-| 15 | Tienkung `tienkung`  | Leg (2\*6) + Arm (2\*4) = 20 | ✅ | TBD | TBD | TBD |
-| 16 | PAL Robotics' Talos `pal_talos`  | Head (2) + Arm (2\*7) + Waist (2) + Leg (2\*6) = 30 | ✅ | TBD | TBD | TBD |
-| More robots coming soon ! |
-| 18 | AgiBot A2 `agibot_a2` | TBD | TBD | TBD | TBD | TBD |
-| 19 | OpenLoong `openloong` | TBD | TBD | TBD | TBD | TBD |
+| 4 | Booster T1 `booster_t1` | TBD | ✅ | TBD | TBD | TBD | TBD |
+| 5 | Booster T1 29dof `booster_t1_29dof` | TBD | ✅ | ✅ | TBD | TBD | TBD |
+| 6 | Booster K1 `booster_k1` | Neck (2) + Arm (2\*4) + Leg (2\*6) = 22 | ✅ | TBD | TBD | TBD | TBD |
+| 7 | Stanford ToddlerBot `stanford_toddy` | TBD | ✅ | ✅ | TBD | TBD | TBD |
+| 8 | Fourier N1 `fourier_n1` | TBD | ✅ | ✅ | TBD | TBD | TBD |
+| 9 | ENGINEAI PM01 `engineai_pm01` | TBD | ✅ | ✅ | TBD | TBD | TBD |
+| 10 | HighTorque Hi `hightorque_hi` | Head (2) + Arm (2\*5) + Waist (1) + Leg (2\*6) = 25 | ✅ | TBD | TBD | TBD | TBD |
+| 11 | Galaxea R1 Pro `galaxea_r1pro` (this is a wheeled robot!) | Base (6) + Torso (4) + Arm (2*7) = 24 | ✅ | TBD | TBD | TBD | TBD |
+| 12 | Kuavo `kuavo_s45` | Head (2) + Arm (2\*7) + Leg (2\*6) = 28 | ✅ | TBD | TBD | TBD | TBD |
+| 13 | Berkeley Humanoid Lite `berkeley_humanoid_lite` (need further tuning) | Leg (2\*6) + Arm (2\*5) = 22 | ✅ | TBD | TBD | TBD | TBD |
+| 14 | PND Adam Lite `pnd_adam_lite` | Leg (2\*6) + Waist (3) + Arm (2\*5) = 25 | ✅ | TBD | TBD | TBD | TBD |
+| 15 | Tienkung `tienkung` | Leg (2\*6) + Arm (2\*4) = 20 | ✅ | TBD | TBD | TBD | TBD |
+| 16 | PAL Robotics' Talos `pal_talos` | Head (2) + Arm (2\*7) + Waist (2) + Leg (2\*6) = 30 | TBD | ✅ | TBD | TBD | TBD |
+| 17 | AgiBot A2 `agibot_a2` | TBD | TBD | TBD | TBD | TBD | TBD |
+| 18 | OpenLoong `openloong` | TBD | TBD | TBD | TBD | TBD | TBD |
+
+More robots coming soon !
 
 
 
