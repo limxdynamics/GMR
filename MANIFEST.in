@@ -1,0 +1,5 @@
+# setup.py reads PYPI.md for long_description; keep it (and the licence files it
+# refers to) in the sdist so `python -m build` works from a clean checkout.
+include PYPI.md
+include LICENSE
+include THIRD_PARTY_NOTICES

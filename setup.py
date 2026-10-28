@@ -1,4 +1,8 @@
+from pathlib import Path
+
 from setuptools import setup, find_packages
+
+HERE = Path(__file__).resolve().parent
 
 setup(
   name = 'general_motion_retargeting',
@@ -7,9 +11,9 @@ setup(
   author_email="lastyanjieze@gmail.com",
   maintainer="LimX Dynamics",
   description="General Motion Retargeting (GMR) for Humanoid Robots",
-  long_description=open("README.md").read(),
+  long_description=(HERE / "PYPI.md").read_text(encoding="utf-8"),
   long_description_content_type="text/markdown",
-  url="https://github.com/limx-retarget/GMR",
+  url="https://github.com/limxdynamics/GMR",
   license="MIT",
   version="0.2.0",
   install_requires=[

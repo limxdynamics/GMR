@@ -2,6 +2,23 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Documentation Map
+
+Four files, four audiences. Do not merge them:
+
+- `README.md` / `README.zh-CN.md` - the fork, and only the fork: both LimX robots, installation, the
+  input formats, the export schemas. Everything a LimX user needs to run a retarget.
+- `docs/upstream.md` / `docs/upstream.zh-CN.md` - the upstream GMR manual, kept as it stands (the
+  Chinese file is a translation this repository maintains). The robot support table, the non-LimX
+  capture pipelines, PICO streaming, the benchmark, citation and release news live here and nowhere
+  else.
+- `DOC.md` - the IK config parameter reference.
+- `PYPI.md` - packaging metadata only, wired to `long_description`. Keep it self-contained: PyPI does
+  not resolve relative links, so every URL in it has to be absolute.
+
+The README used to hold the upstream manual inline. If a section seems to be missing from it, it is
+in `docs/upstream.md`.
+
 ## Installation and Setup
 
 This is a Python package for motion retargeting to humanoid robots. Install in development mode:
@@ -31,7 +48,8 @@ conda install -c conda-forge libstdcxx-ng -y
 
 ### Supported Robots
 
-Core robot models in `assets/` directory:
+`assets/` holds the robot models; `ROBOT_BASE_DICT` in `general_motion_retargeting/params.py` is the
+list of record (20 keys). The ones worth knowing first:
 - Unitree G1 (`unitree_g1`) - 29 DOF humanoid
 - Booster T1 (`booster_t1`) - Full-body humanoid 
 - Booster K1 (`booster_k1`) - 22 DOF humanoid
@@ -42,7 +60,7 @@ Core robot models in `assets/` directory:
 - HighTorque Hi (`hightorque_hi`) - 25 DOF humanoid
 - Galaxea R1 Pro (`galaxea_r1pro`) - 24 DOF wheeled humanoid
 - LimX OLI EDU (`limx_oli_edu`) - 31 series DOF (12 leg + 3 waist + 2 head + 14 arm). The model comes from the public `humanoid-description` submodule at `assets/humanoid-description/`, or a checkout pointed to by `HUMANOID_DESCRIPTION_DIR`. Its `HU_D04_01_vis.xml` is pure-serial, so no `frozen_joints` are needed.
-- LimX Luna / HU_L04 (`limx_luna`) - 27 series DOF (12 leg + 3 waist + 2 head + 10 arm; each arm ends at `wrist_yaw`). The description is **not vendored**: it comes from the private `luna-description` submodule at `assets/luna-description/`, or a checkout pointed to by `LUNA_DESCRIPTION_DIR`. Retargeted motions feed [luna-beyondmimic](https://github.com/limx-luna/luna-beyondmimic) via the `.npy` export.
+- LimX Luna / HU_L04 (`limx_luna`) - 27 series DOF (12 leg + 3 waist + 2 head + 10 arm; each arm ends at `wrist_yaw`). The description is **not vendored**: it comes from the public `luna-description` submodule at `assets/luna-description/`, or a checkout pointed to by `LUNA_DESCRIPTION_DIR`. Retargeted motions feed [luna-beyondmimic](https://github.com/limxdynamics/luna-beyondmimic) via the `.npy` export.
 
 Additional models retained in ROBOT_BASE_DICT for compatibility:
 - `unitree_g1_with_hands` (43 DOF with dexterous hands)
@@ -121,7 +139,8 @@ Add `--record_video --video_path <output.mp4>` to any visualization command to r
 **Key Capabilities**:
 - **Multi-format Input**: SMPL-X (AMASS/OMOMO), BVH variants, and real-time OptiTrack streaming
 - **Real-time Performance**: 60-70 FPS on high-end hardware for teleoperation
-- **9 Robot Models**: From research platforms to commercial humanoids
+- **20 robot keys**: 18 upstream humanoids plus `limx_oli_edu` and `limx_luna`; the support matrix
+  is in `README.md`
 - **Robust IK**: Mink-based solver with automatic human height scaling
 - **Visualization**: MuJoCo-based viewer with video recording capabilities
 - **Batch Processing**: Dataset-level retargeting workflows
@@ -138,4 +157,4 @@ Add `--record_video --video_path <output.mp4>` to any visualization command to r
 - Wheeled humanoid support (Galaxea R1 Pro)
 - Enhanced OptiTrack real-time streaming
 - LimX OLI EDU support, plus a generic `frozen_joints` hook in `motion_retarget.py` for robots that need parallel-mechanism filtering without an XML rewrite (unused by registered robots)
-- LimX Luna / HU_L04 support from the private `luna-description` submodule, with a `.npy` exporter matching the luna-beyondmimic motion schema
+- LimX Luna / HU_L04 support from the public `luna-description` submodule, with a `.npy` exporter matching the luna-beyondmimic motion schema
