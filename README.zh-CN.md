@@ -6,7 +6,11 @@
   <img src="./assets/gmr_demo.gif" alt="GMR 动作重定向演示" width="520">
 </p>
 
+<div align="center">
+
 # GMR: General Motion Retargeting
+
+</div>
 
 <p align="center">
   <a href="https://arxiv.org/abs/2505.02833"><img src="https://img.shields.io/badge/paper-arXiv%3A2505.02833-b31b1b.svg" alt="Paper: arXiv 2505.02833"></a>
