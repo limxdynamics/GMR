@@ -1,4 +1,6 @@
-**English** | [中文](README.zh-CN.md)
+<p align="center">
+  <b>English</b> | <a href="README.zh-CN.md">中文</a>
+</p>
 
 ## Demo
 
