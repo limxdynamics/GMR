@@ -1,3 +1,7 @@
+<p align="center">
+  <b>English</b> | <a href="upstream.zh-CN.md">中文</a>
+</p>
+
 _Upstream GMR README, kept as it was. Only the relative paths (`../assets/...`, `../DOC.md`, ...) and one heading level differ, so that the file can live under `docs/`. The LimX additions are documented in [`../README.md`](../README.md)._
 
 # GMR: General Motion Retargeting

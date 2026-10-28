@@ -1,4 +1,8 @@
-_上游 GMR README 的中文译本（本仓库自己维护，上游只有英文版）。只有相对路径（`../assets/...`、`../DOC.md` 等）与一处标题层级不同，以便放在 `docs/` 下。LimX 新增的部分写在 [`../README.md`](../README.md)。_
+<p align="center">
+  <a href="upstream.md">English</a> | <b>中文</b>
+</p>
+
+_上游 GMR README 的中文译本（本仓库自己维护，上游只有英文版）。只有相对路径（`../assets/...`、`../DOC.md` 等）与一处标题层级不同，以便放在 `docs/` 下。LimX 新增的部分写在 [`../README.zh-CN.md`](../README.zh-CN.md)。_
 
 # GMR: General Motion Retargeting（通用运动重定向）
 
