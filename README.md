@@ -3,6 +3,10 @@
 </p>
 
 <p align="center">
+  <img src="./assets/figures/banner.png" alt="GMR retargets human motion onto the LimX OLI EDU and Luna humanoids" width="100%">
+</p>
+
+<p align="center">
   <img src="./assets/gmr_demo.gif" alt="GMR motion retargeting demo" width="520">
 </p>
 
@@ -31,6 +35,12 @@ fork; the machinery underneath is upstream's.
 > upstream repository, the SMPL-X / GVHMR / BVH / Xsens / OptiTrack pipelines, PICO streaming for
 > TWIST2, the speed benchmark, the release news and the citation entries. Read it for a robot or a
 > capture format this page does not cover.
+
+<p align="center">
+  <img src="./assets/figures/pipeline.png" alt="Pipeline: six capture formats feed loaders that normalise the skeleton, two IK stages solve it on mink, and the result exports to two LimX humanoids in two file formats" width="100%">
+</p>
+
+Six capture formats enter at the left. The loader normalises the skeleton and the up axis, `mink` solves two IK stages in sequence, and the exporter writes whichever schema the `--save_path` extension names.
 
 ## Quick Start (LimX Robots & BeyondMimic Motion Export)
 
@@ -113,6 +123,10 @@ Both robots accept these capture formats. Each row is the `--robot limx_oli_edu`
 | BVH (FZMotion) | `scripts/bvh_to_robot.py --format fzmotion` | chest is `Chest`, not `Spine2` |
 | BVH (Noitom) | `scripts/bvh_to_robot.py --format noitom` | no toe joint, so the ankle keeps its own orientation |
 | BVH (Xsens, 3ds Max export) | `scripts/xsens_bvh_to_robot.py --bvh_format 3DSM` | `offsets.json` is optional; without it all channel offsets are zero |
+
+<p align="center">
+  <img src="./assets/figures/yaw-convention.png" alt="Two up-axis conventions 90 degrees apart: LAFAN1 and Nokov put the subject's left-right axis on X, FZMotion and Noitom put it on Y" width="100%">
+</p>
 
 FZMotion and Noitom take the same loading path as agmr, which differs from LAFAN1 and Nokov
 in two ways that decide where the IK targets land:
@@ -220,6 +234,10 @@ python scripts/batch_gmr_pkl_to_csv.py --folder output/
 ```
 
 ### Robot Motion Data Formats
+
+<p align="center">
+  <img src="./assets/figures/output-schema.png" alt="The two output schemas side by side: .npy with five keys for luna-beyondmimic and .npz/.pkl with nine keys for BeyondMimic, note the different quaternion orders" width="100%">
+</p>
 
 `--save_path` picks the schema by file extension, both written by `general_motion_retargeting/motion_export.py`:
 

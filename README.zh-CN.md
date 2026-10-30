@@ -3,6 +3,10 @@
 </p>
 
 <p align="center">
+  <img src="./assets/figures/banner-zh.png" alt="GMR 把人体动作重定向到 LimX OLI EDU 与 Luna 人形" width="100%">
+</p>
+
+<p align="center">
   <img src="./assets/gmr_demo.gif" alt="GMR 动作重定向演示" width="520">
 </p>
 
@@ -29,6 +33,12 @@
 > **与 LimX 无关的内容都在上游文档里。** [`docs/upstream.zh-CN.md`](docs/upstream.zh-CN.md) 是上游 README 的原样副本：
 > 完整的机器人与数据格式支持表、上游仓库的安装方式、SMPL-X / GVHMR / BVH / Xsens / OptiTrack 各条链路、
 > TWIST2 的 PICO 实时流、速度基准、版本新闻与引用条目。本页没覆盖的机器人或采集格式去那里找。
+
+<p align="center">
+  <img src="./assets/figures/pipeline-zh.png" alt="数据流：六种采集格式经 loader 归一化骨架，由 mink 解两段 IK，再导出到两款 LimX 人形的两种文件格式" width="100%">
+</p>
+
+左侧是六种采集格式。loader 负责骨架与向上轴的归一化，`mink` 依次解两段 IK，最后由 exporter 按 `--save_path` 的扩展名写出对应 schema。
 
 ## 快速上手（LimX 机器人 & BeyondMimic 动作导出）
 
@@ -105,6 +115,10 @@ export LUNA_DESCRIPTION_DIR=/path/to/luna-description   # 包含 HU_L04_descript
 | BVH（FZMotion） | `scripts/bvh_to_robot.py --format fzmotion` | 胸部节点是 `Chest`，不是 `Spine2` |
 | BVH（Noitom） | `scripts/bvh_to_robot.py --format noitom` | 无脚趾关节，脚踝保持自身朝向 |
 | BVH（Xsens，3ds Max 导出） | `scripts/xsens_bvh_to_robot.py --bvh_format 3DSM` | `offsets.json` 可选；缺省时所有通道 offset 为零 |
+
+<p align="center">
+  <img src="./assets/figures/yaw-convention-zh.png" alt="两种相差 90 度的向上轴约定：LAFAN1 与 Nokov 把左右轴放在 X，FZMotion 与 Noitom 放在 Y" width="100%">
+</p>
 
 FZMotion 与 Noitom 的加载方式与 agmr 一致，与 LAFAN1 和 Nokov 有两处差异，决定了 IK 目标落点：
 
@@ -198,6 +212,10 @@ python scripts/batch_gmr_pkl_to_csv.py --folder output/
 ```
 
 ### 机器人动作数据格式
+
+<p align="center">
+  <img src="./assets/figures/output-schema-zh.png" alt="两种输出 schema 并排：.npy 五个 key 供 luna-beyondmimic，.npz/.pkl 九个 key 供 BeyondMimic，注意四元数顺序不同" width="100%">
+</p>
 
 `--save_path` 按文件扩展名选择 schema，两者都由 `general_motion_retargeting/motion_export.py` 写入：
 
