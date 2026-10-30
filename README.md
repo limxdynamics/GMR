@@ -1,9 +1,9 @@
 <p align="center">
-  <b>English</b> | <a href="README.zh-CN.md">中文</a>
+  <img src="./assets/figures/banner.png" alt="One frame of the bundled Xsens boxing clip: the captured human skeleton, and the same frame retargeted by GMR onto LimX OLI EDU (31 DoF) and Luna (27 DoF)" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/figures/banner.png" alt="GMR retargets human motion onto the LimX OLI EDU and Luna humanoids" width="100%">
+  <b>English</b> | <a href="README.zh-CN.md">中文</a>
 </p>
 
 <p align="center">

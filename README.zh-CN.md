@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="README.md">English</a> | <b>中文</b>
+  <img src="./assets/figures/banner-zh.png" alt="仓库自带 Xsens 拳击动捕中的一帧：左为人体骨架，右为 GMR 重定向到 LimX OLI EDU（31 自由度）和 Luna（27 自由度）的同一帧" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/figures/banner-zh.png" alt="GMR 把人体动作重定向到 LimX OLI EDU 与 Luna 人形" width="100%">
+  <a href="README.md">English</a> | <b>中文</b>
 </p>
 
 <p align="center">
