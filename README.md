@@ -6,10 +6,6 @@
   <b>English</b> | <a href="README.zh-CN.md">中文</a>
 </p>
 
-<p align="center">
-  <img src="./assets/gmr_demo.gif" alt="GMR motion retargeting demo" width="520">
-</p>
-
 <div align="center">
 
 # GMR: General Motion Retargeting
