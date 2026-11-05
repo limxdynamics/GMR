@@ -6,11 +6,6 @@
   <b>English</b> | <a href="README.zh-CN.md">中文</a>
 </p>
 
-<!-- limx-community:start -->
-<!-- Managed by limxdynamics/limxdynamics/.github/community/sync_community.py; QR code: doc/wechat_qr.png in that repo -->
-<p align="center"><a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/Join%20Our%20WeChat%20Community-All%20Projects%20Welcome-07C160?style=for-the-badge&logo=wechat&logoColor=white" alt="WeChat Community"></a></p>
-<!-- limx-community:end -->
-
 <div align="center">
 
 # GMR: General Motion Retargeting
@@ -23,6 +18,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-yellow.svg" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/version-0.2.0-blue.svg" alt="Version 0.2.0">
   <a href="https://github.com/YanjieZe/GMR"><img src="https://img.shields.io/badge/fork%20of-YanjieZe%2FGMR-2f6feb" alt="Fork of YanjieZe/GMR"></a>
+  <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
 LimX Dynamics' fork of [General Motion Retargeting (GMR)](https://github.com/YanjieZe/GMR). It
