@@ -19,6 +19,7 @@
   <img src="https://img.shields.io/badge/version-0.2.0-blue.svg" alt="Version 0.2.0">
   <a href="https://github.com/YanjieZe/GMR"><img src="https://img.shields.io/badge/fork%20of-YanjieZe%2FGMR-2f6feb" alt="Fork of YanjieZe/GMR"></a>
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
+  <a href="mailto:opensource@limxdynamics.com"><img src="https://img.shields.io/badge/Partnership%20%26%20Procurement-opensource%40limxdynamics.com-6e7681" alt="Partnership & Procurement: opensource@limxdynamics.com"></a>
 </p>
 
 LimX Dynamics' fork of [General Motion Retargeting (GMR)](https://github.com/YanjieZe/GMR). It

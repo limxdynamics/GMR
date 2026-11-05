@@ -19,6 +19,7 @@
   <img src="https://img.shields.io/badge/version-0.2.0-blue.svg" alt="Version 0.2.0">
   <a href="https://github.com/YanjieZe/GMR"><img src="https://img.shields.io/badge/fork%20of-YanjieZe%2FGMR-2f6feb" alt="Fork of YanjieZe/GMR"></a>
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
+  <a href="mailto:opensource@limxdynamics.com"><img src="https://img.shields.io/badge/%E5%90%88%E4%BD%9C%E9%87%87%E8%B4%AD-opensource%40limxdynamics.com-6e7681" alt="合作采购：opensource@limxdynamics.com"></a>
 </p>
 
 逐际动力（LimX Dynamics）对 [General Motion Retargeting (GMR)](https://github.com/YanjieZe/GMR) 的 fork：
