@@ -19,8 +19,8 @@
   <img src="https://img.shields.io/badge/version-0.2.0-blue.svg" alt="Version 0.2.0">
   <a href="https://github.com/YanjieZe/GMR"><img src="https://img.shields.io/badge/fork%20of-YanjieZe%2FGMR-2f6feb" alt="Fork of YanjieZe/GMR"></a>
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-07C160?logo=wechat&logoColor=white" alt="微信开发者社区"></a>
-  <a href="mailto:opensource@limxdynamics.com"><img src="https://img.shields.io/badge/%E5%90%88%E4%BD%9C%E9%87%87%E8%B4%AD-opensource%40limxdynamics.com-fa8c16?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BPHJlY3QgeD0iMyIgeT0iNSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE0IiByeD0iMiIvPjxwYXRoIGQ9Im0zIDcgOSA2IDktNiIvPjwvc3ZnPg%3D%3D" alt="合作采购：opensource@limxdynamics.com"></a>
 </p>
+<p align="center"><sub>合作采购请联系 <a href="mailto:opensource@limxdynamics.com">opensource@limxdynamics.com</a></sub></p>
 
 逐际动力（LimX Dynamics）对 [General Motion Retargeting (GMR)](https://github.com/YanjieZe/GMR) 的 fork：
 把人体动捕数据重定向到两款 TRON 系列人形（`limx_oli_edu` 与 `limx_luna`），并按
